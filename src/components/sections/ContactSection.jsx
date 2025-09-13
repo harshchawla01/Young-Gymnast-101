@@ -175,7 +175,7 @@ const ContactSection = () => {
                 <input
                   {...register("name")}
                   type="text"
-                  className="form-input"
+                  className="form-input text-black"
                   placeholder="Enter your full name"
                 />
                 {errors.name && (
@@ -191,7 +191,7 @@ const ContactSection = () => {
                 <input
                   {...register("email")}
                   type="email"
-                  className="form-input"
+                  className="form-input text-black"
                   placeholder="your.email@example.com"
                 />
                 {errors.email && (
@@ -207,7 +207,7 @@ const ContactSection = () => {
                 <input
                   {...register("phone")}
                   type="tel"
-                  className="form-input"
+                  className="form-input text-black"
                   placeholder="+91 9876543210"
                 />
                 {errors.phone && (
@@ -223,7 +223,7 @@ const ContactSection = () => {
                 <input
                   {...register("community")}
                   type="text"
-                  className="form-input"
+                  className="form-input text-black"
                   placeholder="e.g., Gachibowli Heights, Kondapur Villas"
                 />
                 {errors.community && (
@@ -236,7 +236,10 @@ const ContactSection = () => {
               {/* Age Group */}
               <div>
                 <label className="form-label">Interested Age Group *</label>
-                <select {...register("ageGroup")} className="form-input">
+                <select
+                  {...register("ageGroup")}
+                  className="form-input text-black"
+                >
                   <option value="">Select age group</option>
                   {ageGroups.map((group) => (
                     <option key={group.value} value={group.value}>
@@ -257,7 +260,7 @@ const ContactSection = () => {
                 <textarea
                   {...register("message")}
                   rows={4}
-                  className="form-input resize-none"
+                  className="form-input resize-none text-black"
                   placeholder="Tell us about your community, number of kids interested, preferred timing, etc."
                 />
                 {errors.message && (
