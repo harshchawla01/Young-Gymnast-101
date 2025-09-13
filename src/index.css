@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Custom CSS Variables for Young Gymnast 101 */
+:root {
+  --color-ygm-blue: #00AEEF;
+  --color-ygm-orange: #FF7F00;
+  --color-ygm-green: #4CAF50;
+  --color-ygm-white: #FFFFFF;
+  --color-ygm-light-gray: #F5F5F5;
+  --color-ygm-dark-gray: #333333;
+}
+
+/* Global Styles for Young Gymnast 101 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-ygm-dark-gray);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-ygm-orange);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #e6720e;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: var(--color-ygm-blue);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #0099d4;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-ygm-green);
+  color: var(--color-ygm-green);
+  background-color: transparent;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-ygm-green);
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.card:hover {
+  box-shadow: 0 25px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Section Styles */
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+}
+
+.container-custom {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Text Styles */
+.heading-xl {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-ygm-blue);
+}
+
+@media (min-width: 768px) {
+  .heading-xl {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-xl {
+    font-size: 3.75rem;
+  }
+}
+
+.heading-lg {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-ygm-blue);
+}
+
+@media (min-width: 768px) {
+  .heading-lg {
+    font-size: 2.25rem;
+  }
+}
+
+.heading-md {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-ygm-blue);
+}
+
+@media (min-width: 768px) {
+  .heading-md {
+    font-size: 1.875rem;
+  }
+}
+
+.text-body {
+  color: #374151;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+/* Color utility classes */
+.text-ygm-blue { color: var(--color-ygm-blue); }
+.text-ygm-orange { color: var(--color-ygm-orange); }
+.text-ygm-green { color: var(--color-ygm-green); }
+.text-ygm-dark-gray { color: var(--color-ygm-dark-gray); }
+
+.bg-ygm-blue { background-color: var(--color-ygm-blue); }
+.bg-ygm-orange { background-color: var(--color-ygm-orange); }
+.bg-ygm-green { background-color: var(--color-ygm-green); }
+.bg-ygm-light-gray { background-color: var(--color-ygm-light-gray); }
+.bg-ygm-dark-gray { background-color: var(--color-ygm-dark-gray); }
+
+.border-ygm-blue { border-color: var(--color-ygm-blue); }
+.border-ygm-orange { border-color: var(--color-ygm-orange); }
+.border-ygm-green { border-color: var(--color-ygm-green); }
+
+/* Form Styles */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-ygm-blue);
+  box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.1);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-ygm-dark-gray);
+}
+
+/* Custom animations */
+.animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-ygm-blue) 0%, var(--color-ygm-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    transform: translate3d(0,-10px,0);
+  }
+  70% {
+    transform: translate3d(0,-5px,0);
+  }
+  90% {
+    transform: translate3d(0,-2px,0);
+  }
+}
