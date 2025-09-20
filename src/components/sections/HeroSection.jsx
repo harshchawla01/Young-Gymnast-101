@@ -1,9 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import heroImage from "../../assets/YG pics/gymnastics-hero-kids-action.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="bg-gradient-to-br from-ygm-light-gray to-white section-padding overflow-hidden">
+    <section
+      id="home"
+      className="bg-gradient-to-br from-ygm-light-gray to-white section-padding overflow-hidden"
+    >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -13,17 +17,17 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.h1 
+            <motion.h1
               className="heading-xl mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Welcome to{' '}
+              Welcome to{" "}
               <span className="text-gradient">Young Gymnast 101!</span>
             </motion.h1>
-            
-            <motion.h2 
+
+            <motion.h2
               className="text-2xl md:text-3xl font-semibold text-ygm-orange mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -31,22 +35,30 @@ const HeroSection = () => {
             >
               Flip into Fun Right in Your Community! 🌟
             </motion.h2>
-            
-            <motion.p 
+
+            <motion.p
               className="text-body mb-8 max-w-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Young Gymnast 101 brings gymnastics to Hyderabad's gated communities, 
-              delighting <span className="font-semibold text-ygm-blue">500+ kids</span> across{' '}
-              <span className="font-semibold text-ygm-blue">10 locations</span>. 
-              Professional coaches lead fun, safe classes on inflatable mats, helping kids 
-              soar with confidence and strength. Invite the team for a{' '}
-              <span className="font-semibold text-ygm-orange">FREE workshop</span> in your community today!
+              Young Gymnast 101 brings gymnastics to India's gated communities,
+              delighting{" "}
+              <span className="font-semibold text-ygm-blue">500+ kids</span>{" "}
+              across{" "}
+              <span className="font-semibold text-ygm-blue">
+                multiple cities
+              </span>
+              . Professional coaches lead fun, safe classes on inflatable mats,
+              helping kids soar with confidence and strength. Invite the team
+              for a{" "}
+              <span className="font-semibold text-ygm-orange">
+                FREE workshop
+              </span>{" "}
+              in your community today!
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -59,7 +71,7 @@ const HeroSection = () => {
               >
                 Invite Us for a Free Workshop! 🎯
               </motion.button>
-              
+
               <motion.button
                 className="btn-outline text-lg px-8 py-4"
                 whileHover={{ scale: 1.05 }}
@@ -70,22 +82,34 @@ const HeroSection = () => {
             </motion.div>
 
             {/* Quick Stats */}
-            <motion.div 
-              className="grid grid-cols-3 gap-4 mt-12 max-w-md mx-auto lg:mx-0"
+            <motion.div
+              className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 max-w-2xl mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
             >
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-ygm-blue">500+</div>
+                <div className="text-2xl md:text-3xl font-bold text-ygm-blue">
+                  500+
+                </div>
                 <div className="text-sm text-gray-600">Happy Kids</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-ygm-orange">10</div>
+                <div className="text-2xl md:text-3xl font-bold text-pink-500">
+                  90%
+                </div>
+                <div className="text-sm text-gray-600">Girls ✨</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-ygm-orange">
+                  50+
+                </div>
                 <div className="text-sm text-gray-600">Communities</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-ygm-green">15+</div>
+                <div className="text-2xl md:text-3xl font-bold text-ygm-green">
+                  15+
+                </div>
                 <div className="text-sm text-gray-600">Years Exp.</div>
               </div>
             </motion.div>
@@ -99,15 +123,13 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              {/* Placeholder for hero image */}
-              <div className="bg-gradient-to-br from-ygm-blue to-ygm-green aspect-[4/3] flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <div className="text-6xl mb-4">🤸‍♀️</div>
-                  <div className="text-xl font-semibold mb-2">Kids Tumbling on Inflatable Mats</div>
-                  <div className="text-sm opacity-90">in a Community Park/Clubhouse</div>
-                </div>
-              </div>
-              
+              {/* Hero Image */}
+              <img
+                src={heroImage}
+                alt="Young gymnasts practicing in community setting with professional coaches"
+                className="w-full h-full object-cover aspect-[4/3]"
+              />
+
               {/* Floating Elements */}
               <motion.div
                 className="absolute top-4 right-4 bg-ygm-orange text-white px-3 py-1 rounded-full text-sm font-semibold"
@@ -116,7 +138,7 @@ const HeroSection = () => {
               >
                 🌟 Fun & Safe
               </motion.div>
-              
+
               <motion.div
                 className="absolute bottom-4 left-4 bg-ygm-blue text-white px-3 py-1 rounded-full text-sm font-semibold"
                 animate={{ y: [0, -10, 0] }}

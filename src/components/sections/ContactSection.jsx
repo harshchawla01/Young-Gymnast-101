@@ -78,7 +78,7 @@ const ContactSection = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Young Gymnast 101 offers free workshops in Hyderabad's gated
+              Young Gymnast 101 offers free workshops in India's gated
               communities. Contact the team to start fun, skill-building classes
               for kids right in your neighborhood!
             </motion.p>
@@ -97,9 +97,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Service Areas</div>
-                  <div className="text-blue-100">
-                    Hyderabad Gated Communities
-                  </div>
+                  <div className="text-blue-100">Indian Gated Communities</div>
                 </div>
               </div>
 
