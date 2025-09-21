@@ -21,9 +21,16 @@ const Header = () => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const headerHeight = 100; // Approximate header height
+      // Get actual header height dynamically
+      const header = document.querySelector('header');
+      const headerHeight = header ? header.offsetHeight : 80;
+      
+      // Add extra offset for mobile devices
+      const isMobile = window.innerWidth < 768;
+      const extraOffset = isMobile ? 20 : 0;
+      
       const elementPosition = targetElement.offsetTop;
-      const offsetPosition = elementPosition - headerHeight;
+      const offsetPosition = elementPosition - headerHeight - extraOffset;
 
       window.scrollTo({
         top: offsetPosition,
